@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		446EE389207662F500F2E7FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE388207662F500F2E7FE /* AppDelegate.swift */; };
+		446EE38B207662F500F2E7FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE38A207662F500F2E7FE /* ViewController.swift */; };
+		446EE38E207662F500F2E7FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446EE38C207662F500F2E7FE /* Main.storyboard */; };
+		446EE390207662F500F2E7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446EE38F207662F500F2E7FE /* Assets.xcassets */; };
+		446EE393207662F500F2E7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446EE391207662F500F2E7FE /* LaunchScreen.storyboard */; };
+		446EE39E207662F500F2E7FE /* MagicLifeCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE39D207662F500F2E7FE /* MagicLifeCounterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		446EE39A207662F500F2E7FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 446EE37D207662F500F2E7FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 446EE384207662F500F2E7FE;
+			remoteInfo = MagicLifeCounter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		446EE385207662F500F2E7FE /* MagicLifeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicLifeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		446EE388207662F500F2E7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		446EE38A207662F500F2E7FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		446EE38D207662F500F2E7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		446EE38F207662F500F2E7FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		446EE392207662F500F2E7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		446EE394207662F500F2E7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		446EE399207662F500F2E7FE /* MagicLifeCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicLifeCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		446EE39D207662F500F2E7FE /* MagicLifeCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicLifeCounterTests.swift; sourceTree = "<group>"; };
+		446EE39F207662F500F2E7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		446EE382207662F500F2E7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446EE396207662F500F2E7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		446EE37C207662F500F2E7FE = {
+			isa = PBXGroup;
+			children = (
+				446EE387207662F500F2E7FE /* MagicLifeCounter */,
+				446EE39C207662F500F2E7FE /* MagicLifeCounterTests */,
+				446EE386207662F500F2E7FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		446EE386207662F500F2E7FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				446EE385207662F500F2E7FE /* MagicLifeCounter.app */,
+				446EE399207662F500F2E7FE /* MagicLifeCounterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		446EE387207662F500F2E7FE /* MagicLifeCounter */ = {
+			isa = PBXGroup;
+			children = (
+				446EE388207662F500F2E7FE /* AppDelegate.swift */,
+				446EE38A207662F500F2E7FE /* ViewController.swift */,
+				446EE38C207662F500F2E7FE /* Main.storyboard */,
+				446EE38F207662F500F2E7FE /* Assets.xcassets */,
+				446EE391207662F500F2E7FE /* LaunchScreen.storyboard */,
+				446EE394207662F500F2E7FE /* Info.plist */,
+			);
+			path = MagicLifeCounter;
+			sourceTree = "<group>";
+		};
+		446EE39C207662F500F2E7FE /* MagicLifeCounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				446EE39D207662F500F2E7FE /* MagicLifeCounterTests.swift */,
+				446EE39F207662F500F2E7FE /* Info.plist */,
+			);
+			path = MagicLifeCounterTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		446EE384207662F500F2E7FE /* MagicLifeCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446EE3A2207662F500F2E7FE /* Build configuration list for PBXNativeTarget "MagicLifeCounter" */;
+			buildPhases = (
+				446EE381207662F500F2E7FE /* Sources */,
+				446EE382207662F500F2E7FE /* Frameworks */,
+				446EE383207662F500F2E7FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicLifeCounter;
+			productName = MagicLifeCounter;
+			productReference = 446EE385207662F500F2E7FE /* MagicLifeCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		446EE398207662F500F2E7FE /* MagicLifeCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446EE3A5207662F500F2E7FE /* Build configuration list for PBXNativeTarget "MagicLifeCounterTests" */;
+			buildPhases = (
+				446EE395207662F500F2E7FE /* Sources */,
+				446EE396207662F500F2E7FE /* Frameworks */,
+				446EE397207662F500F2E7FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				446EE39B207662F500F2E7FE /* PBXTargetDependency */,
+			);
+			name = MagicLifeCounterTests;
+			productName = MagicLifeCounterTests;
+			productReference = 446EE399207662F500F2E7FE /* MagicLifeCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		446EE37D207662F500F2E7FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = GS;
+				TargetAttributes = {
+					446EE384207662F500F2E7FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					446EE398207662F500F2E7FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 446EE384207662F500F2E7FE;
+					};
+				};
+			};
+			buildConfigurationList = 446EE380207662F500F2E7FE /* Build configuration list for PBXProject "MagicLifeCounter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 446EE37C207662F500F2E7FE;
+			productRefGroup = 446EE386207662F500F2E7FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				446EE384207662F500F2E7FE /* MagicLifeCounter */,
+				446EE398207662F500F2E7FE /* MagicLifeCounterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		446EE383207662F500F2E7FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446EE393207662F500F2E7FE /* LaunchScreen.storyboard in Resources */,
+				446EE390207662F500F2E7FE /* Assets.xcassets in Resources */,
+				446EE38E207662F500F2E7FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446EE397207662F500F2E7FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		446EE381207662F500F2E7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446EE38B207662F500F2E7FE /* ViewController.swift in Sources */,
+				446EE389207662F500F2E7FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446EE395207662F500F2E7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446EE39E207662F500F2E7FE /* MagicLifeCounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		446EE39B207662F500F2E7FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 446EE384207662F500F2E7FE /* MagicLifeCounter */;
+			targetProxy = 446EE39A207662F500F2E7FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		446EE38C207662F500F2E7FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446EE38D207662F500F2E7FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		446EE391207662F500F2E7FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446EE392207662F500F2E7FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		446EE3A0207662F500F2E7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		446EE3A1207662F500F2E7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		446EE3A3207662F500F2E7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicLifeCounter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siepmann.MagicLifeCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		446EE3A4207662F500F2E7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicLifeCounter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siepmann.MagicLifeCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		446EE3A6207662F500F2E7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicLifeCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siepmann.MagicLifeCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicLifeCounter.app/MagicLifeCounter";
+			};
+			name = Debug;
+		};
+		446EE3A7207662F500F2E7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicLifeCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siepmann.MagicLifeCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicLifeCounter.app/MagicLifeCounter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		446EE380207662F500F2E7FE /* Build configuration list for PBXProject "MagicLifeCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446EE3A0207662F500F2E7FE /* Debug */,
+				446EE3A1207662F500F2E7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		446EE3A2207662F500F2E7FE /* Build configuration list for PBXNativeTarget "MagicLifeCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446EE3A3207662F500F2E7FE /* Debug */,
+				446EE3A4207662F500F2E7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		446EE3A5207662F500F2E7FE /* Build configuration list for PBXNativeTarget "MagicLifeCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446EE3A6207662F500F2E7FE /* Debug */,
+				446EE3A7207662F500F2E7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 446EE37D207662F500F2E7FE /* Project object */;
+}
