@@ -15,9 +15,9 @@ enum NumberOfRounds: Int {
 }
 
 struct Match: LifeCheckable {
-    private var player1: Player
-    private var player2: Player
-    private var numberOfRounds: NumberOfRounds
+    var player1: Player
+    var player2: Player
+    var numberOfRounds: NumberOfRounds
     var matchScorePlayer1: Int = 0
     var matchScorePlayer2: Int = 0
     
