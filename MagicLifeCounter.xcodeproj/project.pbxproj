@@ -13,6 +13,12 @@
 		446EE390207662F500F2E7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446EE38F207662F500F2E7FE /* Assets.xcassets */; };
 		446EE393207662F500F2E7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446EE391207662F500F2E7FE /* LaunchScreen.storyboard */; };
 		446EE39E207662F500F2E7FE /* MagicLifeCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE39D207662F500F2E7FE /* MagicLifeCounterTests.swift */; };
+		446EE3AA2076632700F2E7FE /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE3A92076632700F2E7FE /* Match.swift */; };
+		446EE3AB2076632700F2E7FE /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE3A92076632700F2E7FE /* Match.swift */; };
+		446EE3AD2076653100F2E7FE /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE3AC2076653100F2E7FE /* GameConfig.swift */; };
+		446EE3AE2076653100F2E7FE /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE3AC2076653100F2E7FE /* GameConfig.swift */; };
+		446EE3B02076733100F2E7FE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE3AF2076733100F2E7FE /* Player.swift */; };
+		446EE3B12076733100F2E7FE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE3AF2076733100F2E7FE /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,9 @@
 		446EE399207662F500F2E7FE /* MagicLifeCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicLifeCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		446EE39D207662F500F2E7FE /* MagicLifeCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicLifeCounterTests.swift; sourceTree = "<group>"; };
 		446EE39F207662F500F2E7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		446EE3A92076632700F2E7FE /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		446EE3AC2076653100F2E7FE /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		446EE3AF2076733100F2E7FE /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,7 @@
 		446EE387207662F500F2E7FE /* MagicLifeCounter */ = {
 			isa = PBXGroup;
 			children = (
+				446EE3A82076631000F2E7FE /* Model */,
 				446EE388207662F500F2E7FE /* AppDelegate.swift */,
 				446EE38A207662F500F2E7FE /* ViewController.swift */,
 				446EE38C207662F500F2E7FE /* Main.storyboard */,
@@ -94,6 +104,16 @@
 				446EE39F207662F500F2E7FE /* Info.plist */,
 			);
 			path = MagicLifeCounterTests;
+			sourceTree = "<group>";
+		};
+		446EE3A82076631000F2E7FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				446EE3A92076632700F2E7FE /* Match.swift */,
+				446EE3AC2076653100F2E7FE /* GameConfig.swift */,
+				446EE3AF2076733100F2E7FE /* Player.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +221,9 @@
 			files = (
 				446EE38B207662F500F2E7FE /* ViewController.swift in Sources */,
 				446EE389207662F500F2E7FE /* AppDelegate.swift in Sources */,
+				446EE3AA2076632700F2E7FE /* Match.swift in Sources */,
+				446EE3B02076733100F2E7FE /* Player.swift in Sources */,
+				446EE3AD2076653100F2E7FE /* GameConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446EE3B12076733100F2E7FE /* Player.swift in Sources */,
 				446EE39E207662F500F2E7FE /* MagicLifeCounterTests.swift in Sources */,
+				446EE3AE2076653100F2E7FE /* GameConfig.swift in Sources */,
+				446EE3AB2076632700F2E7FE /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
