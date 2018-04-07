@@ -14,31 +14,40 @@ enum NumberOfRounds: Int {
     case five = 5
 }
 
-struct Match: LifeCheckable {
+protocol GameCheckable {
+    func endGame()
+}
+
+struct Match {
     var player1: Player
     var player2: Player
     var numberOfRounds: NumberOfRounds
     var matchScorePlayer1: Int = 0
     var matchScorePlayer2: Int = 0
     
+    var delegate: GameCheckable?
+    
     init(_ firstPlayer: Player, secondPlayer: Player, numberOfRounds: NumberOfRounds) {
         self.player1 = firstPlayer
         self.player2 = secondPlayer
         self.numberOfRounds = numberOfRounds
-    
-        self.player2.delegate = self
-        self.player1.delegate = self
     }
     
-    mutating func informPlayerDied() {
+    mutating func roundIsFinished() -> Bool {
         if self.player1.currentLife == 0 {
-            print("Player \(self.player1.name) died!")
+            self.increaseScorePlayerTwo()
+        } else if self.player2.currentLife == 0 {
+            self.increaseScorePlayerOne()
         } else {
-            print("Player \(self.player2.name) died!")
+            return false
         }
         
         self.player1.resetPlayerScore()
         self.player2.resetPlayerScore()
+    
+        gameHasEnded()
+        
+        return true
     }
     
     mutating func increaseScorePlayerOne() {
@@ -49,13 +58,10 @@ struct Match: LifeCheckable {
         self.matchScorePlayer2 += 1
     }
     
-    mutating func gameHasEnded() -> (Bool, Player?) {
-        if self.numberOfRounds.rawValue / 2 < self.matchScorePlayer1 {
-            return (true, player1)
-        } else if self.numberOfRounds.rawValue / 2 < self.matchScorePlayer2 {
-            return (true, player1)
-        } else {
-            return (false, nil)
+    private func gameHasEnded() {
+        if self.numberOfRounds.rawValue / 2 < self.matchScorePlayer1 ||
+            self.numberOfRounds.rawValue / 2 < self.matchScorePlayer2 {
+            delegate?.endGame()
         }
     }
 }

@@ -9,24 +9,18 @@
 import Foundation
 
 enum ColorType {
-    case Red
-    case Green
-    case Blue
-    case Black
-    case White
-}
-
-protocol LifeCheckable {
-    mutating func informPlayerDied()
+    case red
+    case green
+    case blue
+    case black
+    case white
 }
 
 struct Player {
     private var gameConfig: GameConfig!
     var name: String = ""
-    var color: ColorType = ColorType.Green
+    var color: ColorType = .green
     var currentLife: Int
-    
-    var delegate: LifeCheckable?
     
     init(_ currentConfig: GameConfig, playerName: String, playerColor: ColorType) {
         self.gameConfig = currentConfig
@@ -41,9 +35,6 @@ struct Player {
     
     mutating func decrementLife() {
         self.currentLife -= 1
-        if self.currentLife == 0 {
-            delegate?.informPlayerDied()
-        }
     }
     
     mutating func resetPlayerScore() {
