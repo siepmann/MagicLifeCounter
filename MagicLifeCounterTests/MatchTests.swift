@@ -25,30 +25,20 @@ class MatchTests: XCTestCase, GameCheckable {
     
     func testFinishRound() {
         let initialRoundScoreForSecondPlayer = currentMatch.matchScorePlayer2
-        
-        while currentMatch.player1.currentLife > 0 {
-            currentMatch.player1.decrementLife()
-        }
-        
-        _ = currentMatch.roundIsFinished()
+        currentMatch.player1.currentLife = 0
+        currentMatch.endRound()
         
         XCTAssertTrue(currentMatch.matchScorePlayer2 > initialRoundScoreForSecondPlayer)
     }
     
     func testGameIsFinished() {
         currentMatch.matchScorePlayer2 = 2
-        
-        while currentMatch.player1.currentLife > 0 {
-            currentMatch.player1.decrementLife()
-        }
-        
-//        endGameExpectation = self.expectation(description: "run protocol delegate")
-
-        _ = currentMatch.roundIsFinished()
+        currentMatch.player1.currentLife = 0
+        currentMatch.endRound()
         XCTAssertTrue(currentMatch.matchScorePlayer2 > currentMatch.numberOfRounds.rawValue / 2)
     }
     
     func endGame() {
-//        endGameExpectation.fulfill()
+
     }
 }

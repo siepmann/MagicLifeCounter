@@ -16,11 +16,17 @@ enum ColorType {
     case white
 }
 
-struct Player {
+protocol ScoreCheckable {
+    func endRound()
+}
+
+class Player {
     private var gameConfig: GameConfig!
     var name: String = ""
     var color: ColorType = .green
     var currentLife: Int
+    
+    var delegate: ScoreCheckable?
     
     init(_ currentConfig: GameConfig, playerName: String, playerColor: ColorType) {
         self.gameConfig = currentConfig
@@ -29,15 +35,18 @@ struct Player {
         self.currentLife = self.gameConfig.startingLife
     }
     
-    mutating func incrementLife() {
+    func incrementLife() {
         self.currentLife += 1
     }
     
-    mutating func decrementLife() {
+    func decrementLife() {
         self.currentLife -= 1
+        if currentLife == 0 {
+            delegate?.endRound()
+        }
     }
     
-    mutating func resetPlayerScore() {
+    func resetPlayerScore() {
         self.currentLife = self.gameConfig.startingLife
     }
 }

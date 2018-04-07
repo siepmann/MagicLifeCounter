@@ -18,7 +18,7 @@ protocol GameCheckable {
     func endGame()
 }
 
-struct Match {
+class Match: ScoreCheckable {
     var player1: Player
     var player2: Player
     var numberOfRounds: NumberOfRounds
@@ -31,30 +31,29 @@ struct Match {
         self.player1 = firstPlayer
         self.player2 = secondPlayer
         self.numberOfRounds = numberOfRounds
+        
+        player1.delegate = self
+        player2.delegate = self
     }
     
-    mutating func roundIsFinished() -> Bool {
+    func endRound() {
         if self.player1.currentLife == 0 {
             self.increaseScorePlayerTwo()
         } else if self.player2.currentLife == 0 {
             self.increaseScorePlayerOne()
-        } else {
-            return false
         }
         
         self.player1.resetPlayerScore()
         self.player2.resetPlayerScore()
-    
-        gameHasEnded()
         
-        return true
+        gameHasEnded()
     }
     
-    mutating func increaseScorePlayerOne() {
+    func increaseScorePlayerOne() {
         self.matchScorePlayer1 += 1
     }
     
-    mutating func increaseScorePlayerTwo() {
+    func increaseScorePlayerTwo() {
         self.matchScorePlayer2 += 1
     }
     
