@@ -19,6 +19,8 @@
 		44D47C1D2077B21C0068506A /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D47C1C2077B21C0068506A /* PlayerTests.swift */; };
 		44D47C1F2077B2B30068506A /* MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D47C1E2077B2B30068506A /* MatchTests.swift */; };
 		44D47C212077B2BC0068506A /* GameConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D47C202077B2BC0068506A /* GameConfigTests.swift */; };
+		6F041E722084BE4300FED779 /* PlayerScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F041E712084BE4300FED779 /* PlayerScoreView.xib */; };
+		6F041E742084BF8100FED779 /* PlayerScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F041E732084BF8100FED779 /* PlayerScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		44D47C1C2077B21C0068506A /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
 		44D47C1E2077B2B30068506A /* MatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTests.swift; sourceTree = "<group>"; };
 		44D47C202077B2BC0068506A /* GameConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfigTests.swift; sourceTree = "<group>"; };
+		6F041E712084BE4300FED779 /* PlayerScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerScoreView.xib; sourceTree = "<group>"; };
+		6F041E732084BF8100FED779 /* PlayerScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		446EE387207662F500F2E7FE /* MagicLifeCounter */ = {
 			isa = PBXGroup;
 			children = (
+				6F041E702084BE2C00FED779 /* View */,
 				446EE3A82076631000F2E7FE /* Model */,
 				446EE388207662F500F2E7FE /* AppDelegate.swift */,
 				446EE38A207662F500F2E7FE /* ViewController.swift */,
@@ -120,6 +125,15 @@
 				446EE3AF2076733100F2E7FE /* Player.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6F041E702084BE2C00FED779 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F041E712084BE4300FED779 /* PlayerScoreView.xib */,
+				6F041E732084BF8100FED779 /* PlayerScoreView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F041E722084BE4300FED779 /* PlayerScoreView.xib in Resources */,
 				446EE393207662F500F2E7FE /* LaunchScreen.storyboard in Resources */,
 				446EE390207662F500F2E7FE /* Assets.xcassets in Resources */,
 				446EE38E207662F500F2E7FE /* Main.storyboard in Resources */,
@@ -227,6 +242,7 @@
 			files = (
 				446EE38B207662F500F2E7FE /* ViewController.swift in Sources */,
 				446EE389207662F500F2E7FE /* AppDelegate.swift in Sources */,
+				6F041E742084BF8100FED779 /* PlayerScoreView.swift in Sources */,
 				446EE3AA2076632700F2E7FE /* Match.swift in Sources */,
 				446EE3B02076733100F2E7FE /* Player.swift in Sources */,
 				446EE3AD2076653100F2E7FE /* GameConfig.swift in Sources */,
@@ -391,7 +407,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				INFOPLIST_FILE = MagicLifeCounter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siepmann.MagicLifeCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				INFOPLIST_FILE = MagicLifeCounter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siepmann.MagicLifeCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
