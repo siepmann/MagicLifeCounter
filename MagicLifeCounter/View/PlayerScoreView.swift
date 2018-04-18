@@ -8,33 +8,51 @@
 
 import UIKit
 
+extension UIView {
+    class func fromNib<T: UIView>() -> T {
+        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
+    }
+}
+
 class PlayerScoreView: UIView {
 
     @IBOutlet private weak var playerLife: UILabel!
     @IBOutlet private weak var bgImage: UIImageView!
     @IBOutlet private weak var playerPoisonCounter: UISlider!
     
-    private var currentPlayer: Player
+    private var currentPlayer: Player?
     
-    init(frame: CGRect, player: Player){
-        currentPlayer = player
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+    }
+    
+    func setup(player: Player) {
+        self.currentPlayer = player
     }
     
     @IBAction func decreaseLife(_ sender: Any) {
-        self.currentPlayer.decrementLife()
+        guard let player = currentPlayer else { return }
+        player.decrementLife()
+        changeCurrentLife()
     }
     
     @IBAction func increaseLife(_ sender: Any) {
-        self.currentPlayer.incrementLife()
+        guard let player = currentPlayer else { return }
+        player.incrementLife()
+        changeCurrentLife()
     }
     
     fileprivate func changeCurrentLife() {
-        self.playerLife.text = "\(self.currentPlayer.currentLife)"
+        guard let player = currentPlayer else { return }
+        self.playerLife.text = "\(player.currentLife)"
     }
     
 }
