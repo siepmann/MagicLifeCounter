@@ -21,7 +21,6 @@
 		44D47C1F2077B2B30068506A /* MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D47C1E2077B2B30068506A /* MatchTests.swift */; };
 		44D47C212077B2BC0068506A /* GameConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D47C202077B2BC0068506A /* GameConfigTests.swift */; };
 		6F041E742084BF8100FED779 /* PlayerScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F041E732084BF8100FED779 /* PlayerScoreView.swift */; };
-		6F8E45CE2088B6A000B49995 /* PlayerScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8E45CD2088B6A000B49995 /* PlayerScoreView.xib */; };
 		EA687D3488565DFC74E75F70 /* Pods_MagicLifeCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BD60DCE5374F2F26DE0B2 /* Pods_MagicLifeCounter.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		5DD54C708DD14B45DEABDFEA /* Pods-MagicLifeCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLifeCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicLifeCounter/Pods-MagicLifeCounter.debug.xcconfig"; sourceTree = "<group>"; };
 		67CC1DB081283D31BD6CC348 /* Pods-MagicLifeCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLifeCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicLifeCounter/Pods-MagicLifeCounter.release.xcconfig"; sourceTree = "<group>"; };
 		6F041E732084BF8100FED779 /* PlayerScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreView.swift; sourceTree = "<group>"; };
-		6F8E45CD2088B6A000B49995 /* PlayerScoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerScoreView.xib; path = ../../../../.Trash/PlayerScoreView.xib; sourceTree = "<group>"; };
 		DF80B4C48AF5397C57773FE9 /* Pods_MagicLifeCounterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicLifeCounterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDE95DD4E3E85045158ABFB /* Pods-MagicLifeCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLifeCounterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicLifeCounterTests/Pods-MagicLifeCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,7 +140,6 @@
 		6F041E702084BE2C00FED779 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6F8E45CD2088B6A000B49995 /* PlayerScoreView.xib */,
 				6F041E732084BF8100FED779 /* PlayerScoreView.swift */,
 			);
 			path = View;
@@ -254,7 +251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F8E45CE2088B6A000B49995 /* PlayerScoreView.xib in Resources */,
 				446EE393207662F500F2E7FE /* LaunchScreen.storyboard in Resources */,
 				446EE390207662F500F2E7FE /* Assets.xcassets in Resources */,
 				446EE38E207662F500F2E7FE /* Main.storyboard in Resources */,

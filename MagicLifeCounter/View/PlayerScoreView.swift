@@ -9,58 +9,61 @@
 import UIKit
 import SnapKit
 
-//extension UIView {
-//    class func fromNib<T: UIView>() -> T {
-//        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
-//    }
-//}
-
 class PlayerScoreView: UIView {
-
     private var playerLife: UILabel!
     private var bgImage: UIImageView!
     private var playerPoisonCounter: UISlider!
     
     private var currentPlayer: Player
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override public func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.addSubview(bgImage)
+        self.addSubview(playerLife)
+        self.addSubview(playerPoisonCounter)
+        
+        bgImage.snp.makeConstraints { (make) in
+            make.topMargin.equalTo(self)
+            make.leadingMargin.equalTo(self)
+            make.trailingMargin.equalTo(self)
+            make.bottomMargin.equalTo(self)
+        }
+
+        playerLife.snp.makeConstraints { (make) in
+            make.center.equalTo(self)
+            make.width.equalTo(88)
+            make.height.equalTo(84)
+        }
+
+        playerPoisonCounter.snp.makeConstraints { (make) in
+            make.leadingMargin.equalTo(self).offset(70)
+            make.trailingMargin.equalTo(self).offset(-70)
+            make.bottom.equalTo(self).offset(-35)
+        }
+    }
+    
+    private func configureUIView() {
         self.backgroundColor = .black
         
         playerLife = UILabel()
         playerLife.font = UIFont.systemFont(ofSize: 70)
         playerLife.textColor = .white
-        playerLife.text = "20"
-        playerLife.snp.makeConstraints { (make) in
-            make.center.equalTo(self.center)
-            make.width.equalTo(88)
-            make.height.equalTo(84)
-        }
+        playerLife.text = "\(currentPlayer.currentLife)"
+       
         
         bgImage = UIImageView()
-        bgImage.snp.makeConstraints { (make) in
-            make.top.left.right.bottom.equalTo(0)
-        }
         
         playerPoisonCounter = UISlider()
         playerPoisonCounter.value = 0
         playerPoisonCounter.minimumValue = 0
         playerPoisonCounter.maximumValue = 10
-        playerPoisonCounter.snp.makeConstraints { (make) in
-            make.bottom.equalTo(playerLife).offset(30)
-            make.leadingMargin.equalTo(self).offset(70)
-            make.trailingMargin.equalTo(self).offset(70)
-            make.bottom.equalTo(self).offset(20)
-        }
-        
-        self.addSubview(bgImage)
-        self.addSubview(playerLife)
-        
     }
     
     init(frame: CGRect, player: Player) {
         self.currentPlayer = player
         super.init(frame: frame)
+        configureUIView()
     }
     
     required init?(coder aDecoder: NSCoder) {
