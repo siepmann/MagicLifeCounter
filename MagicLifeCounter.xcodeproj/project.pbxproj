@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0A31916464567BCE629884 /* Pods_MagicLifeCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF80B4C48AF5397C57773FE9 /* Pods_MagicLifeCounterTests.framework */; };
 		446EE389207662F500F2E7FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE388207662F500F2E7FE /* AppDelegate.swift */; };
 		446EE38B207662F500F2E7FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE38A207662F500F2E7FE /* ViewController.swift */; };
 		446EE38E207662F500F2E7FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446EE38C207662F500F2E7FE /* Main.storyboard */; };
@@ -19,8 +20,9 @@
 		44D47C1D2077B21C0068506A /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D47C1C2077B21C0068506A /* PlayerTests.swift */; };
 		44D47C1F2077B2B30068506A /* MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D47C1E2077B2B30068506A /* MatchTests.swift */; };
 		44D47C212077B2BC0068506A /* GameConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D47C202077B2BC0068506A /* GameConfigTests.swift */; };
-		6F041E722084BE4300FED779 /* PlayerScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F041E712084BE4300FED779 /* PlayerScoreView.xib */; };
 		6F041E742084BF8100FED779 /* PlayerScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F041E732084BF8100FED779 /* PlayerScoreView.swift */; };
+		6F8E45CE2088B6A000B49995 /* PlayerScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8E45CD2088B6A000B49995 /* PlayerScoreView.xib */; };
+		EA687D3488565DFC74E75F70 /* Pods_MagicLifeCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BD60DCE5374F2F26DE0B2 /* Pods_MagicLifeCounter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D8B1E7E6E8D936EC862761A /* Pods-MagicLifeCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLifeCounterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicLifeCounterTests/Pods-MagicLifeCounterTests.release.xcconfig"; sourceTree = "<group>"; };
 		446EE385207662F500F2E7FE /* MagicLifeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicLifeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446EE388207662F500F2E7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		446EE38A207662F500F2E7FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,8 +53,13 @@
 		44D47C1C2077B21C0068506A /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
 		44D47C1E2077B2B30068506A /* MatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTests.swift; sourceTree = "<group>"; };
 		44D47C202077B2BC0068506A /* GameConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfigTests.swift; sourceTree = "<group>"; };
-		6F041E712084BE4300FED779 /* PlayerScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerScoreView.xib; sourceTree = "<group>"; };
+		491BD60DCE5374F2F26DE0B2 /* Pods_MagicLifeCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicLifeCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD54C708DD14B45DEABDFEA /* Pods-MagicLifeCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLifeCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicLifeCounter/Pods-MagicLifeCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		67CC1DB081283D31BD6CC348 /* Pods-MagicLifeCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLifeCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicLifeCounter/Pods-MagicLifeCounter.release.xcconfig"; sourceTree = "<group>"; };
 		6F041E732084BF8100FED779 /* PlayerScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreView.swift; sourceTree = "<group>"; };
+		6F8E45CD2088B6A000B49995 /* PlayerScoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerScoreView.xib; path = ../../../../.Trash/PlayerScoreView.xib; sourceTree = "<group>"; };
+		DF80B4C48AF5397C57773FE9 /* Pods_MagicLifeCounterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicLifeCounterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDE95DD4E3E85045158ABFB /* Pods-MagicLifeCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLifeCounterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicLifeCounterTests/Pods-MagicLifeCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA687D3488565DFC74E75F70 /* Pods_MagicLifeCounter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0A31916464567BCE629884 /* Pods_MagicLifeCounterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +88,8 @@
 				446EE387207662F500F2E7FE /* MagicLifeCounter */,
 				446EE39C207662F500F2E7FE /* MagicLifeCounterTests */,
 				446EE386207662F500F2E7FE /* Products */,
+				C08301E2EA9271C74DB3B852 /* Pods */,
+				B10087430EEF89FE4D6ADEFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,10 +142,30 @@
 		6F041E702084BE2C00FED779 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6F041E712084BE4300FED779 /* PlayerScoreView.xib */,
+				6F8E45CD2088B6A000B49995 /* PlayerScoreView.xib */,
 				6F041E732084BF8100FED779 /* PlayerScoreView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B10087430EEF89FE4D6ADEFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				491BD60DCE5374F2F26DE0B2 /* Pods_MagicLifeCounter.framework */,
+				DF80B4C48AF5397C57773FE9 /* Pods_MagicLifeCounterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C08301E2EA9271C74DB3B852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DD54C708DD14B45DEABDFEA /* Pods-MagicLifeCounter.debug.xcconfig */,
+				67CC1DB081283D31BD6CC348 /* Pods-MagicLifeCounter.release.xcconfig */,
+				FEDE95DD4E3E85045158ABFB /* Pods-MagicLifeCounterTests.debug.xcconfig */,
+				2D8B1E7E6E8D936EC862761A /* Pods-MagicLifeCounterTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 446EE3A2207662F500F2E7FE /* Build configuration list for PBXNativeTarget "MagicLifeCounter" */;
 			buildPhases = (
+				668D9C310F2DF1DD9E1E3139 /* [CP] Check Pods Manifest.lock */,
 				446EE381207662F500F2E7FE /* Sources */,
 				446EE382207662F500F2E7FE /* Frameworks */,
 				446EE383207662F500F2E7FE /* Resources */,
+				3803ADFB316EE26D1773459E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 446EE3A5207662F500F2E7FE /* Build configuration list for PBXNativeTarget "MagicLifeCounterTests" */;
 			buildPhases = (
+				0A78B66E296545D57B777364 /* [CP] Check Pods Manifest.lock */,
 				446EE395207662F500F2E7FE /* Sources */,
 				446EE396207662F500F2E7FE /* Frameworks */,
 				446EE397207662F500F2E7FE /* Resources */,
@@ -219,7 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F041E722084BE4300FED779 /* PlayerScoreView.xib in Resources */,
+				6F8E45CE2088B6A000B49995 /* PlayerScoreView.xib in Resources */,
 				446EE393207662F500F2E7FE /* LaunchScreen.storyboard in Resources */,
 				446EE390207662F500F2E7FE /* Assets.xcassets in Resources */,
 				446EE38E207662F500F2E7FE /* Main.storyboard in Resources */,
@@ -234,6 +269,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A78B66E296545D57B777364 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicLifeCounterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3803ADFB316EE26D1773459E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MagicLifeCounter/Pods-MagicLifeCounter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicLifeCounter/Pods-MagicLifeCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		668D9C310F2DF1DD9E1E3139 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicLifeCounter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		446EE381207662F500F2E7FE /* Sources */ = {
@@ -403,7 +495,9 @@
 		};
 		446EE3A3207662F500F2E7FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD54C708DD14B45DEABDFEA /* Pods-MagicLifeCounter.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				INFOPLIST_FILE = MagicLifeCounter/Info.plist;
@@ -418,7 +512,9 @@
 		};
 		446EE3A4207662F500F2E7FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67CC1DB081283D31BD6CC348 /* Pods-MagicLifeCounter.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				INFOPLIST_FILE = MagicLifeCounter/Info.plist;
@@ -433,11 +529,13 @@
 		};
 		446EE3A6207662F500F2E7FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEDE95DD4E3E85045158ABFB /* Pods-MagicLifeCounterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MagicLifeCounterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siepmann.MagicLifeCounterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -449,11 +547,13 @@
 		};
 		446EE3A7207662F500F2E7FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8B1E7E6E8D936EC862761A /* Pods-MagicLifeCounterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MagicLifeCounterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siepmann.MagicLifeCounterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

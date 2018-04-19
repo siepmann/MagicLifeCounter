@@ -7,52 +7,78 @@
 //
 
 import UIKit
+import SnapKit
 
-extension UIView {
-    class func fromNib<T: UIView>() -> T {
-        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
-    }
-}
+//extension UIView {
+//    class func fromNib<T: UIView>() -> T {
+//        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
+//    }
+//}
 
 class PlayerScoreView: UIView {
 
-    @IBOutlet private weak var playerLife: UILabel!
-    @IBOutlet private weak var bgImage: UIImageView!
-    @IBOutlet private weak var playerPoisonCounter: UISlider!
+    private var playerLife: UILabel!
+    private var bgImage: UIImageView!
+    private var playerPoisonCounter: UISlider!
     
-    private var currentPlayer: Player?
+    private var currentPlayer: Player
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .black
+        
+        playerLife = UILabel()
+        playerLife.font = UIFont.systemFont(ofSize: 70)
+        playerLife.textColor = .white
+        playerLife.text = "20"
+        playerLife.snp.makeConstraints { (make) in
+            make.center.equalTo(self.center)
+            make.width.equalTo(88)
+            make.height.equalTo(84)
+        }
+        
+        bgImage = UIImageView()
+        bgImage.snp.makeConstraints { (make) in
+            make.top.left.right.bottom.equalTo(0)
+        }
+        
+        playerPoisonCounter = UISlider()
+        playerPoisonCounter.value = 0
+        playerPoisonCounter.minimumValue = 0
+        playerPoisonCounter.maximumValue = 10
+        playerPoisonCounter.snp.makeConstraints { (make) in
+            make.bottom.equalTo(playerLife).offset(30)
+            make.leadingMargin.equalTo(self).offset(70)
+            make.trailingMargin.equalTo(self).offset(70)
+            make.bottom.equalTo(self).offset(20)
+        }
+        
+        self.addSubview(bgImage)
+        self.addSubview(playerLife)
+        
     }
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, player: Player) {
+        self.currentPlayer = player
         super.init(frame: frame)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    func setup(player: Player) {
-        self.currentPlayer = player
+        fatalError("init(coder:) has not been implemented")
     }
     
     @IBAction func decreaseLife(_ sender: Any) {
-        guard let player = currentPlayer else { return }
-        player.decrementLife()
+        currentPlayer.decrementLife()
         changeCurrentLife()
     }
     
     @IBAction func increaseLife(_ sender: Any) {
-        guard let player = currentPlayer else { return }
-        player.incrementLife()
+        currentPlayer.incrementLife()
         changeCurrentLife()
     }
     
     fileprivate func changeCurrentLife() {
-        guard let player = currentPlayer else { return }
-        self.playerLife.text = "\(player.currentLife)"
+        self.playerLife.text = "\(currentPlayer.currentLife)"
     }
     
 }

@@ -1,0 +1,6 @@
+framework module Pods_MagicLifeCounter {
+  umbrella header "Pods-MagicLifeCounter-umbrella.h"
+
+  export *
+  module * { export * }
+}

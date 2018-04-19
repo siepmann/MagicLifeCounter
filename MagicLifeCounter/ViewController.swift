@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -17,15 +18,13 @@ class ViewController: UIViewController {
         
         let frameView1 = CGRect(x:0 , y: 0, width: screenSize.width, height: screenSize.height / 2)
         let p1 = Player.init(GameConfig(), playerName: "Jogador 1", playerColor: .black)
-        let view1 : PlayerScoreView = .fromNib()
-        view1.frame = frameView1
-        (view1 ).setup(player: p1)
+        
         
         let frameView2 = CGRect(x:0 , y: screenSize.height - (screenSize.height / 2), width: screenSize.width, height: screenSize.height / 2)
         let p2 = Player.init(GameConfig(), playerName: "Jogador 2", playerColor: .red)
-        let view2 : PlayerScoreView = .fromNib()
-        view2.frame = frameView2
-        (view2 ).setup(player: p2)
+        
+        let view1 = PlayerScoreView.init(frame: frameView1, player: p1)
+        let view2 = PlayerScoreView.init(frame: frameView2, player: p2)
         
         
         view1.transform = CGAffineTransform(rotationAngle: (180.0 * .pi) / 180.0)
