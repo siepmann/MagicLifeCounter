@@ -37,9 +37,9 @@ class Match: ScoreCheckable {
     }
     
     func endRound() {
-        if self.player1.currentLife == 0 {
+        if self.player1.getPlayerCurrentLife() == 0 {
             self.increaseScorePlayerTwo()
-        } else if self.player2.currentLife == 0 {
+        } else if self.player2.getPlayerCurrentLife() == 0 {
             self.increaseScorePlayerOne()
         }
         

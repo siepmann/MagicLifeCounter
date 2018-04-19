@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum ColorType {
     case red
@@ -21,12 +22,12 @@ protocol ScoreCheckable {
 }
 
 class Player {
-    private var gameConfig: GameConfig!
-    var name: String = ""
-    var color: ColorType = .green
-    var currentLife: Int
-    
     var delegate: ScoreCheckable?
+    
+    private var name: String = ""
+    private var currentLife: Int
+    private var gameConfig: GameConfig!
+    private var color: ColorType = .green
     
     init(_ currentConfig: GameConfig, playerName: String, playerColor: ColorType) {
         self.gameConfig = currentConfig
@@ -48,5 +49,23 @@ class Player {
     
     func resetPlayerScore() {
         self.currentLife = self.gameConfig.startingLife
+    }
+    
+    func getPlayerName() -> String {
+        return self.name
+    }
+    
+    func getPlayerCurrentLife() -> Int {
+        return currentLife
+    }
+    
+    func getPlayerColor() -> UIColor {
+        switch color {
+        case .red: return .red
+        case .green: return .green
+        case .blue: return .blue
+        case .black: return .black
+        case .white: return .white
+        }
     }
 }

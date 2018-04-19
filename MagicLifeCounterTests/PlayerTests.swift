@@ -17,19 +17,19 @@ class PlayerTests: XCTestCase {
     }
     
     func testLifeIncrement() {
-        let currentLife = p1.currentLife
+        let currentLife = p1.getPlayerCurrentLife()
         p1.incrementLife()
-        XCTAssertTrue(p1.currentLife > currentLife)
+        XCTAssertTrue(p1.getPlayerCurrentLife() > currentLife)
     }
     
     func testLifeDecrement() {
-        let currentLife = p1.currentLife
+        let currentLife = p1.getPlayerCurrentLife()
         p1.decrementLife()
-        XCTAssertTrue(p1.currentLife < currentLife)
+        XCTAssertTrue(p1.getPlayerCurrentLife() < currentLife)
     }
     
     func testPlayerColor() {
-        XCTAssertTrue(p1.color == .red)
+        XCTAssertTrue(p1.getPlayerColor() == .red)
     }
     
     func testResetScore() {
@@ -38,6 +38,6 @@ class PlayerTests: XCTestCase {
         p1.incrementLife()
         
         p1.resetPlayerScore()
-        XCTAssertTrue(p1.currentLife == GameConfig().startingLife)
+        XCTAssertTrue(p1.getPlayerCurrentLife() == GameConfig().startingLife)
     }
 }

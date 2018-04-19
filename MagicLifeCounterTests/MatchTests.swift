@@ -16,8 +16,11 @@ class MatchTests: XCTestCase, GameCheckable {
     private var endGameExpectation: XCTestExpectation!
     
     override func setUp() {
-        firstPlayer = Player(GameConfig(), playerName: "Player 1", playerColor: .red)
-        secondPlayer = Player(GameConfig(), playerName: "Player 2", playerColor: .red)
+        var config = GameConfig()
+        config.startingLife = 0
+        
+        firstPlayer = Player(config, playerName: "Player 1", playerColor: .red)
+        secondPlayer = Player(config, playerName: "Player 2", playerColor: .red)
         
         currentMatch = Match(firstPlayer, secondPlayer: secondPlayer, numberOfRounds: .five)
         currentMatch.delegate = self
@@ -25,7 +28,6 @@ class MatchTests: XCTestCase, GameCheckable {
     
     func testFinishRound() {
         let initialRoundScoreForSecondPlayer = currentMatch.matchScorePlayer2
-        currentMatch.player1.currentLife = 0
         currentMatch.endRound()
         
         XCTAssertTrue(currentMatch.matchScorePlayer2 > initialRoundScoreForSecondPlayer)
@@ -33,8 +35,8 @@ class MatchTests: XCTestCase, GameCheckable {
     
     func testGameIsFinished() {
         currentMatch.matchScorePlayer2 = 2
-        currentMatch.player1.currentLife = 0
         currentMatch.endRound()
+        
         XCTAssertTrue(currentMatch.matchScorePlayer2 > currentMatch.numberOfRounds.rawValue / 2)
     }
     
