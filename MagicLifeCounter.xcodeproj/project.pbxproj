@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A0A31916464567BCE629884 /* Pods_MagicLifeCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF80B4C48AF5397C57773FE9 /* Pods_MagicLifeCounterTests.framework */; };
+		44295597208958DB002878BF /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44295596208958DB002878BF /* ConfigView.swift */; };
 		446EE389207662F500F2E7FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE388207662F500F2E7FE /* AppDelegate.swift */; };
 		446EE38B207662F500F2E7FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EE38A207662F500F2E7FE /* ViewController.swift */; };
 		446EE38E207662F500F2E7FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446EE38C207662F500F2E7FE /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		2D8B1E7E6E8D936EC862761A /* Pods-MagicLifeCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLifeCounterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicLifeCounterTests/Pods-MagicLifeCounterTests.release.xcconfig"; sourceTree = "<group>"; };
+		44295596208958DB002878BF /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
 		446EE385207662F500F2E7FE /* MagicLifeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicLifeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446EE388207662F500F2E7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		446EE38A207662F500F2E7FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				6F041E732084BF8100FED779 /* PlayerScoreView.swift */,
+				44295596208958DB002878BF /* ConfigView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				446EE38B207662F500F2E7FE /* ViewController.swift in Sources */,
 				446EE389207662F500F2E7FE /* AppDelegate.swift in Sources */,
 				6F041E742084BF8100FED779 /* PlayerScoreView.swift in Sources */,
+				44295597208958DB002878BF /* ConfigView.swift in Sources */,
 				446EE3AA2076632700F2E7FE /* Match.swift in Sources */,
 				446EE3B02076733100F2E7FE /* Player.swift in Sources */,
 				446EE3AD2076653100F2E7FE /* GameConfig.swift in Sources */,

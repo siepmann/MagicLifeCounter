@@ -48,14 +48,14 @@ class PlayerScoreView: UIView {
         
         increaseLifeButton.snp.makeConstraints { (make) in
             make.centerY.equalTo(playerLife)
-            make.left.equalTo(playerLife).offset(-60)
+            make.right.equalTo(playerLife).offset(60)
             make.width.equalTo(30)
             make.height.equalTo(30)
         }
         
         decreaseLifeButton.snp.makeConstraints { (make) in
             make.centerY.equalTo(playerLife)
-            make.right.equalTo(playerLife).offset(60)
+            make.left.equalTo(playerLife).offset(-60)
             make.width.equalTo(30)
             make.height.equalTo(30)
         }
@@ -102,15 +102,15 @@ class PlayerScoreView: UIView {
     
     @objc private func decreaseLife() {
         currentPlayer.decrementLife()
-        changeCurrentLife()
+        changeCurrentLifeText()
     }
     
     @objc private func increaseLife() {
         currentPlayer.incrementLife()
-        changeCurrentLife()
+        changeCurrentLifeText()
     }
     
-    fileprivate func changeCurrentLife() {
+    fileprivate func changeCurrentLifeText() {
         playerLife.text = "\(currentPlayer.getPlayerCurrentLife())"
     }
     

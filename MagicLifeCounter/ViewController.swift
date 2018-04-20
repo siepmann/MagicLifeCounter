@@ -10,25 +10,77 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
+    
+    fileprivate let screenHeight = UIScreen.main.bounds.size.height + 20
+    
+    private var logo: UIButton!
+    private var viewConfig = ConfigView()
+    private var firstView = UIView()
+    private var secondView = UIView()
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        logo = UIButton()
+        logo.setImage(#imageLiteral(resourceName: "logo"), for: .normal)
+        logo.addTarget(self, action: #selector(openOptions), for: .touchUpInside)
+        logo.imageView?.contentMode = .scaleAspectFill
+        
+        self.view.addSubview(viewConfig)
+        self.view.addSubview(firstView)
+        self.view.addSubview(secondView)
+        self.view.addSubview(logo)
+        
+        logo.snp.makeConstraints { (make) in
+            make.width.equalTo(50)
+            make.height.equalTo(50)
+            make.center.equalTo(self.view)
+        }
+        
+        viewConfig.backgroundColor = .blue
+        
+        viewConfig.snp.makeConstraints { (make) in
+            make.height.equalTo(60)
+            make.width.equalTo(self.view)
+            make.center.equalTo(self.view)
+        }
+
+        firstView.snp.makeConstraints { (make) in
+            make.topMargin.equalTo(self.view)
+            make.width.equalTo(self.view)
+            make.height.equalTo(screenHeight / 2)
+        }
+        
+        secondView.snp.makeConstraints { (make) in
+            make.bottomMargin.equalTo(self.view)
+            make.width.equalTo(self.view)
+            make.height.equalTo(screenHeight / 2)
+        }
+
+    }
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let screenSize = UIScreen.main.bounds.size
         
-        let frameView1 = CGRect(x:0 , y: 0, width: screenSize.width, height: screenSize.height / 2)
         let p1 = Player.init(GameConfig(), playerName: "Jogador 1", playerColor: .black)
-        
-        let frameView2 = CGRect(x:0 , y: screenSize.height - (screenSize.height / 2), width: screenSize.width, height: screenSize.height / 2)
         let p2 = Player.init(GameConfig(), playerName: "Jogador 2", playerColor: .red)
         
-        let view1 = PlayerScoreView.init(frame: frameView1, player: p1)
-        let view2 = PlayerScoreView.init(frame: frameView2, player: p2)
-        
-        
-        view1.transform = CGAffineTransform(rotationAngle: (180.0 * .pi) / 180.0)
-        
-        self.view.addSubview(view1)
-        self.view.addSubview(view2)
+        firstView = PlayerScoreView.init(frame: firstView.frame, player: p1)
+        secondView = PlayerScoreView.init(frame: secondView.frame, player: p2)
+
+        firstView.transform = CGAffineTransform(rotationAngle: (180.0 * .pi) / 180.0)
+    }
+    
+    @objc func openOptions() {
+        UIView.animate(withDuration: 0.5) {
+            self.firstView.snp.updateConstraints({ (make) in
+                make.height.equalTo(self.firstView.frame.height - 30)
+            })
+            
+            self.secondView.snp.updateConstraints({ (make) in
+                make.height.equalTo(self.secondView.frame.height - 30)
+            })
+            
+            self.logo.alpha = 0
+        }
     }
 }
