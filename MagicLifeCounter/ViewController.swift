@@ -13,28 +13,17 @@ class ViewController: UIViewController {
     
     fileprivate let screenHeight = UIScreen.main.bounds.size.height + 20
     
-    private var logo: UIButton!
     private var viewConfig = ConfigView()
     private var firstView = UIView()
     private var secondView = UIView()
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        logo = UIButton()
-        logo.setImage(#imageLiteral(resourceName: "logo"), for: .normal)
-        logo.addTarget(self, action: #selector(openOptions), for: .touchUpInside)
-        logo.imageView?.contentMode = .scaleAspectFill
         
         self.view.addSubview(viewConfig)
         self.view.addSubview(firstView)
         self.view.addSubview(secondView)
-        self.view.addSubview(logo)
         
-        logo.snp.makeConstraints { (make) in
-            make.width.equalTo(50)
-            make.height.equalTo(50)
-            make.center.equalTo(self.view)
-        }
         
         viewConfig.backgroundColor = .blue
         
@@ -68,19 +57,5 @@ class ViewController: UIViewController {
         secondView = PlayerScoreView.init(frame: secondView.frame, player: p2)
 
         firstView.transform = CGAffineTransform(rotationAngle: (180.0 * .pi) / 180.0)
-    }
-    
-    @objc func openOptions() {
-        UIView.animate(withDuration: 0.5) {
-            self.firstView.snp.updateConstraints({ (make) in
-                make.height.equalTo(self.firstView.frame.height - 30)
-            })
-            
-            self.secondView.snp.updateConstraints({ (make) in
-                make.height.equalTo(self.secondView.frame.height - 30)
-            })
-            
-            self.logo.alpha = 0
-        }
     }
 }

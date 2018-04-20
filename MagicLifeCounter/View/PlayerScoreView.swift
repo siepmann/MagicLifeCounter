@@ -93,6 +93,7 @@ class PlayerScoreView: UIView {
     init(frame: CGRect, player: Player) {
         self.currentPlayer = player
         super.init(frame: frame)
+        self.isUserInteractionEnabled = true
         configureUIView()
     }
     

@@ -32,6 +32,10 @@ class PlayerTests: XCTestCase {
         XCTAssertTrue(p1.getPlayerColor() == .red)
     }
     
+    func testPlayerName() {
+        XCTAssertTrue(p1.getPlayerName() == "Player 1")
+    }
+    
     func testResetScore() {
         p1.incrementLife()
         p1.incrementLife()

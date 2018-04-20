@@ -25,6 +25,7 @@ class ConfigView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.isUserInteractionEnabled = true
         configureView()
     }
     
